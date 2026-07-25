@@ -1,3 +1,3 @@
 # FRIENDS
 
-FRIENDS or Fast and Rapid Information Exchange Network for Data Sharing
+Fast and Rapid Information Exchange Network for Data Sharing (FRIENDS)

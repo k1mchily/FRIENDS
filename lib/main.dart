@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pocketbase/pocketbase.dart';
-import 'features/auth/presentation/login.dart';
+import 'features/auth/logic/login_or_register.dart';
 
 final pb = PocketBase('http://127.0.0.1:8090');
 
@@ -13,6 +13,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: LoginPage());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: LoginOrRegister(),
+    );
   }
 }

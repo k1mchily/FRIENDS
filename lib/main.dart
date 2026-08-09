@@ -11,6 +11,21 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: NetworksList());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'FRIENDS',
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
+      ),
+      home: NetworksList(
+        onNetworkSelected: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const LoginOrRegister())
+          )
+        }
+      ),
+    );
   }
 }
